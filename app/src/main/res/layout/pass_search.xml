@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/passSearchByID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="아이디 입력"
+        android:textColor="#ffffff"
+        android:textColorHint="#dfcd9f" />
+
+    <EditText
+        android:id="@+id/passSearchByName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="이름 입력"
+        android:textColor="#ffffff"
+        android:textColorHint="#dfcd9f" />
+
+    <EditText
+        android:id="@+id/passSearchByEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="이메일 입력"
+        android:textColor="#ffffff"
+        android:textColorHint="#dfcd9f" />
+
+</LinearLayout>

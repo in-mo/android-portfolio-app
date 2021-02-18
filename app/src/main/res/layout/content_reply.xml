@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/replyTb"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rWriterView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="작성자 : " />
+
+            <TextView
+                android:id="@+id/rDateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="13dp"
+                android:text="날짜" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="내용" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/replyTb">
+
+        <ImageView
+            android:id="@+id/replyLikeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/like_btn" />
+
+        <TextView
+            android:id="@+id/replyLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/replyLikeBtn"
+            android:text="0 회" />
+
+        <ImageView
+            android:id="@+id/replyHateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/replyLikeCount"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/hate_btn" />
+
+        <TextView
+            android:id="@+id/replyHateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/replyHateBtn"
+            android:text="0 회" />
+
+        <Button
+            android:id="@+id/btn_reDelete"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="삭제" />
+
+        <Button
+            android:id="@+id/btn_reUpdate"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_reDelete"
+            android:text="수정" />
+
+    </RelativeLayout>
+</RelativeLayout>
